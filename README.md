@@ -1,3 +1,3 @@
 # Vector-main-Repository
 an open-source Roblox exploit
-![](img1.png)
+![](https://raw.githubusercontent.com/zv800/Vector-main-Repository/main/img1.jpg)
