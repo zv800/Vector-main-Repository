@@ -70,6 +70,7 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.InjTest2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         CType(Me.FastColoredTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -254,7 +255,7 @@ Partial Class Form1
         Me.ListBox1.ItemHeight = 16
         Me.ListBox1.Location = New System.Drawing.Point(582, 0)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(206, 228)
+        Me.ListBox1.Size = New System.Drawing.Size(206, 196)
         Me.ListBox1.TabIndex = 7
         '
         'OpenFileDialog1
@@ -296,6 +297,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Gray
+        Me.TabPage1.Controls.Add(Me.CheckBox1)
         Me.TabPage1.Controls.Add(Me.Button26)
         Me.TabPage1.Controls.Add(Me.FastColoredTextBox1)
         Me.TabPage1.Controls.Add(Me.ListBox1)
@@ -577,6 +579,17 @@ Partial Class Form1
         Me.InjTest2.Enabled = True
         Me.InjTest2.Interval = 1
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox1.Location = New System.Drawing.Point(595, 203)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(181, 20)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "open server-side executor"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -596,6 +609,7 @@ Partial Class Form1
         CType(Me.FastColoredTextBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
@@ -650,4 +664,5 @@ Partial Class Form1
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents InjTest2 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

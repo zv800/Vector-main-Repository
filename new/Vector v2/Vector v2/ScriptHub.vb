@@ -195,4 +195,48 @@ Public Class ScriptHub
         Dim Script As String = wb.DownloadString("https://pastebin.com/raw/nqPH3paC")
         hax.SendLuaScript(Script)
     End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/N63J4Lq2")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/q9PCVqqv")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/BvDk2aeJ")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/ft5C0W8F")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/epgnNu91")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/ruHyjCGA")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/ysnZXcSe")
+        hax.SendLuaScript(Script)
+    End Sub
 End Class

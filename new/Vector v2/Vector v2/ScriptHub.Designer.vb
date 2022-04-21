@@ -52,6 +52,13 @@ Partial Class ScriptHub
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.Button31 = New System.Windows.Forms.Button()
+        Me.Button33 = New System.Windows.Forms.Button()
+        Me.Button34 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -360,12 +367,96 @@ Partial Class ScriptHub
         Me.Button10.Text = "War sim GUI"
         Me.Button10.UseVisualStyleBackColor = False
         '
+        'Button25
+        '
+        Me.Button25.BackColor = System.Drawing.Color.Silver
+        Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button25.Location = New System.Drawing.Point(588, 15)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(138, 51)
+        Me.Button25.TabIndex = 57
+        Me.Button25.Text = "Big Paintball GUI"
+        Me.Button25.UseVisualStyleBackColor = False
+        '
+        'Button28
+        '
+        Me.Button28.BackColor = System.Drawing.Color.Silver
+        Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button28.Location = New System.Drawing.Point(588, 354)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(138, 51)
+        Me.Button28.TabIndex = 59
+        Me.Button28.Text = "natural disaster survival script"
+        Me.Button28.UseVisualStyleBackColor = False
+        '
+        'Button29
+        '
+        Me.Button29.BackColor = System.Drawing.Color.Silver
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button29.Location = New System.Drawing.Point(588, 297)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(138, 51)
+        Me.Button29.TabIndex = 60
+        Me.Button29.Text = "INVIS"
+        Me.Button29.UseVisualStyleBackColor = False
+        '
+        'Button30
+        '
+        Me.Button30.BackColor = System.Drawing.Color.Silver
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Location = New System.Drawing.Point(588, 239)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(138, 51)
+        Me.Button30.TabIndex = 61
+        Me.Button30.Text = "PET SIM X SCRIPT"
+        Me.Button30.UseVisualStyleBackColor = False
+        '
+        'Button31
+        '
+        Me.Button31.BackColor = System.Drawing.Color.Silver
+        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button31.Location = New System.Drawing.Point(588, 186)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(138, 51)
+        Me.Button31.TabIndex = 62
+        Me.Button31.Text = "OP KAT GUI"
+        Me.Button31.UseVisualStyleBackColor = False
+        '
+        'Button33
+        '
+        Me.Button33.BackColor = System.Drawing.Color.Silver
+        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button33.Location = New System.Drawing.Point(588, 129)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(138, 51)
+        Me.Button33.TabIndex = 63
+        Me.Button33.Text = "Noclip GUI"
+        Me.Button33.UseVisualStyleBackColor = False
+        '
+        'Button34
+        '
+        Me.Button34.BackColor = System.Drawing.Color.Silver
+        Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button34.Location = New System.Drawing.Point(588, 72)
+        Me.Button34.Name = "Button34"
+        Me.Button34.Size = New System.Drawing.Size(138, 51)
+        Me.Button34.TabIndex = 64
+        Me.Button34.Text = "hitbox expander"
+        Me.Button34.UseVisualStyleBackColor = False
+        '
         'ScriptHub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(588, 457)
+        Me.ClientSize = New System.Drawing.Size(845, 457)
+        Me.Controls.Add(Me.Button34)
+        Me.Controls.Add(Me.Button33)
+        Me.Controls.Add(Me.Button31)
+        Me.Controls.Add(Me.Button30)
+        Me.Controls.Add(Me.Button29)
+        Me.Controls.Add(Me.Button28)
+        Me.Controls.Add(Me.Button25)
         Me.Controls.Add(Me.Button24)
         Me.Controls.Add(Me.Button23)
         Me.Controls.Add(Me.Button22)
@@ -398,7 +489,7 @@ Partial Class ScriptHub
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ScriptHub"
-        Me.Text = "ScriptHub"
+        Me.Text = "ScriptHub (things may or may not work)"
         Me.ResumeLayout(False)
 
     End Sub
@@ -432,4 +523,11 @@ Partial Class ScriptHub
     Friend WithEvents Button23 As Button
     Friend WithEvents Button24 As Button
     Friend WithEvents Button10 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents Button28 As Button
+    Friend WithEvents Button29 As Button
+    Friend WithEvents Button30 As Button
+    Friend WithEvents Button31 As Button
+    Friend WithEvents Button33 As Button
+    Friend WithEvents Button34 As Button
 End Class
