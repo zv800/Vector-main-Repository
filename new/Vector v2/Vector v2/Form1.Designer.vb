@@ -25,6 +25,8 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -40,32 +42,34 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button26 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.usr = New System.Windows.Forms.TextBox()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
-        Me.Button22 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
-        Me.Button25 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.InjTest = New System.Windows.Forms.Timer(Me.components)
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.usr = New System.Windows.Forms.TextBox()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.InjTest = New System.Windows.Forms.Timer(Me.components)
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.InjTest2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.FastColoredTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -85,8 +89,33 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(864, 51)
+        Me.Panel1.Size = New System.Drawing.Size(824, 51)
         Me.Panel1.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Silver
+        Me.Label3.Location = New System.Drawing.Point(525, 14)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(95, 20)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "not injected"
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Silver
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.Enabled = False
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Location = New System.Drawing.Point(650, 6)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(58, 39)
+        Me.Button9.TabIndex = 4
+        Me.Button9.Text = "API"
+        Me.ToolTip1.SetToolTip(Me.Button9, "change the API (WIP)")
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -97,6 +126,7 @@ Partial Class Form1
         Me.Button7.Size = New System.Drawing.Size(47, 39)
         Me.Button7.TabIndex = 3
         Me.Button7.Text = "-"
+        Me.ToolTip1.SetToolTip(Me.Button7, "minimize")
         Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
@@ -108,6 +138,7 @@ Partial Class Form1
         Me.Button6.Size = New System.Drawing.Size(47, 39)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "X"
+        Me.ToolTip1.SetToolTip(Me.Button6, "Exit")
         Me.Button6.UseVisualStyleBackColor = False
         '
         'Label2
@@ -141,6 +172,7 @@ Partial Class Form1
         Me.Button1.Size = New System.Drawing.Size(102, 37)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Execute"
+        Me.ToolTip1.SetToolTip(Me.Button1, "this will execute your code")
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -152,6 +184,7 @@ Partial Class Form1
         Me.Button2.Size = New System.Drawing.Size(109, 37)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Clear"
+        Me.ToolTip1.SetToolTip(Me.Button2, "clears whatever is in the text box")
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
@@ -160,9 +193,10 @@ Partial Class Form1
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(582, 229)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(206, 37)
+        Me.Button3.Size = New System.Drawing.Size(85, 37)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Inject"
+        Me.ToolTip1.SetToolTip(Me.Button3, "this will inject the exploit")
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
@@ -174,6 +208,7 @@ Partial Class Form1
         Me.Button4.Size = New System.Drawing.Size(109, 37)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.Button4, "this will open already existing code")
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
@@ -185,12 +220,13 @@ Partial Class Form1
         Me.Button5.Size = New System.Drawing.Size(109, 37)
         Me.Button5.TabIndex = 5
         Me.Button5.Text = "Save File"
+        Me.ToolTip1.SetToolTip(Me.Button5, "this will save your code")
         Me.Button5.UseVisualStyleBackColor = False
         '
         'FastColoredTextBox1
         '
         Me.FastColoredTextBox1.AutoCompleteBracketsList = New Char() {Global.Microsoft.VisualBasic.ChrW(40), Global.Microsoft.VisualBasic.ChrW(41), Global.Microsoft.VisualBasic.ChrW(123), Global.Microsoft.VisualBasic.ChrW(125), Global.Microsoft.VisualBasic.ChrW(91), Global.Microsoft.VisualBasic.ChrW(93), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(34), Global.Microsoft.VisualBasic.ChrW(39), Global.Microsoft.VisualBasic.ChrW(39)}
-        Me.FastColoredTextBox1.AutoScrollMinSize = New System.Drawing.Size(171, 18)
+        Me.FastColoredTextBox1.AutoScrollMinSize = New System.Drawing.Size(231, 18)
         Me.FastColoredTextBox1.BackBrush = Nothing
         Me.FastColoredTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
         Me.FastColoredTextBox1.CharHeight = 18
@@ -207,7 +243,7 @@ Partial Class Form1
         Me.FastColoredTextBox1.ServiceColors = CType(resources.GetObject("FastColoredTextBox1.ServiceColors"), FastColoredTextBoxNS.ServiceColors)
         Me.FastColoredTextBox1.Size = New System.Drawing.Size(580, 224)
         Me.FastColoredTextBox1.TabIndex = 6
-        Me.FastColoredTextBox1.Text = "--scripts here"
+        Me.FastColoredTextBox1.Text = "Print(""Hello World"")"
         Me.FastColoredTextBox1.Zoom = 100
         '
         'ListBox1
@@ -218,7 +254,7 @@ Partial Class Form1
         Me.ListBox1.ItemHeight = 16
         Me.ListBox1.Location = New System.Drawing.Point(582, 0)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(212, 228)
+        Me.ListBox1.Size = New System.Drawing.Size(206, 228)
         Me.ListBox1.TabIndex = 7
         '
         'OpenFileDialog1
@@ -234,6 +270,7 @@ Partial Class Form1
         Me.Button8.Size = New System.Drawing.Size(120, 37)
         Me.Button8.TabIndex = 8
         Me.Button8.Text = "refresh"
+        Me.ToolTip1.SetToolTip(Me.Button8, "this will refresh the script box")
         Me.Button8.UseVisualStyleBackColor = False
         '
         'MenuStrip1
@@ -244,19 +281,6 @@ Partial Class Form1
         Me.MenuStrip1.Size = New System.Drawing.Size(824, 24)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.Silver
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.Enabled = False
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Location = New System.Drawing.Point(650, 6)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(58, 39)
-        Me.Button9.TabIndex = 4
-        Me.Button9.Text = "API"
-        Me.Button9.UseVisualStyleBackColor = False
         '
         'TabControl1
         '
@@ -272,6 +296,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Gray
+        Me.TabPage1.Controls.Add(Me.Button26)
         Me.TabPage1.Controls.Add(Me.FastColoredTextBox1)
         Me.TabPage1.Controls.Add(Me.ListBox1)
         Me.TabPage1.Controls.Add(Me.Button8)
@@ -286,6 +311,18 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(794, 272)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Executor"
+        '
+        'Button26
+        '
+        Me.Button26.BackColor = System.Drawing.Color.Gray
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button26.Location = New System.Drawing.Point(673, 229)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(115, 37)
+        Me.Button26.TabIndex = 9
+        Me.Button26.Text = "ScriptHub"
+        Me.ToolTip1.SetToolTip(Me.Button26, "a script hub lol")
+        Me.Button26.UseVisualStyleBackColor = False
         '
         'TabPage2
         '
@@ -315,179 +352,14 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Quick Commands"
         '
-        'Button11
+        'TextBox1
         '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Location = New System.Drawing.Point(6, 6)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(140, 42)
-        Me.Button11.TabIndex = 0
-        Me.Button11.Text = "Btools"
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Location = New System.Drawing.Point(6, 54)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(140, 42)
-        Me.Button10.TabIndex = 1
-        Me.Button10.Text = "SetWalkSpeed"
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'usr
-        '
-        Me.usr.BackColor = System.Drawing.Color.Gray
-        Me.usr.Location = New System.Drawing.Point(590, 6)
-        Me.usr.Name = "usr"
-        Me.usr.Size = New System.Drawing.Size(198, 22)
-        Me.usr.TabIndex = 2
-        Me.usr.Text = "usrname here"
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Location = New System.Drawing.Point(6, 102)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(140, 42)
-        Me.Button12.TabIndex = 4
-        Me.Button12.Text = "RemoveArms"
-        Me.Button12.UseVisualStyleBackColor = False
-        '
-        'Button13
-        '
-        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Location = New System.Drawing.Point(6, 150)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(140, 42)
-        Me.Button13.TabIndex = 5
-        Me.Button13.Text = "AddFire"
-        Me.Button13.UseVisualStyleBackColor = False
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Location = New System.Drawing.Point(152, 6)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(140, 42)
-        Me.Button14.TabIndex = 6
-        Me.Button14.Text = "AddForcefield"
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Button15
-        '
-        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.Location = New System.Drawing.Point(152, 54)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(140, 42)
-        Me.Button15.TabIndex = 7
-        Me.Button15.Text = "AddSmoke"
-        Me.Button15.UseVisualStyleBackColor = False
-        '
-        'Button16
-        '
-        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.Location = New System.Drawing.Point(152, 102)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(140, 42)
-        Me.Button16.TabIndex = 8
-        Me.Button16.Text = "AddSparkles"
-        Me.Button16.UseVisualStyleBackColor = False
-        '
-        'Button17
-        '
-        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button17.Location = New System.Drawing.Point(152, 150)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(140, 42)
-        Me.Button17.TabIndex = 9
-        Me.Button17.Text = "DoBlockHead"
-        Me.Button17.UseVisualStyleBackColor = False
-        '
-        'Button18
-        '
-        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button18.Location = New System.Drawing.Point(298, 6)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(140, 42)
-        Me.Button18.TabIndex = 10
-        Me.Button18.Text = "RemoveFire"
-        Me.Button18.UseVisualStyleBackColor = False
-        '
-        'Button19
-        '
-        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button19.Location = New System.Drawing.Point(298, 54)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(140, 42)
-        Me.Button19.TabIndex = 11
-        Me.Button19.Text = "RemoveForceField"
-        Me.Button19.UseVisualStyleBackColor = False
-        '
-        'Button20
-        '
-        Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button20.Location = New System.Drawing.Point(298, 102)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(140, 42)
-        Me.Button20.TabIndex = 12
-        Me.Button20.Text = "RemoveLegs"
-        Me.Button20.UseVisualStyleBackColor = False
-        '
-        'Button21
-        '
-        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button21.Location = New System.Drawing.Point(298, 150)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(140, 42)
-        Me.Button21.TabIndex = 13
-        Me.Button21.Text = "RemoveLimbs"
-        Me.Button21.UseVisualStyleBackColor = False
-        '
-        'Button22
-        '
-        Me.Button22.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button22.Location = New System.Drawing.Point(444, 6)
-        Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(140, 42)
-        Me.Button22.TabIndex = 14
-        Me.Button22.Text = "RemoveSmoke"
-        Me.Button22.UseVisualStyleBackColor = False
-        '
-        'Button23
-        '
-        Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button23.Location = New System.Drawing.Point(444, 54)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(140, 42)
-        Me.Button23.TabIndex = 15
-        Me.Button23.Text = "RemoveSparkles"
-        Me.Button23.UseVisualStyleBackColor = False
-        '
-        'Button24
-        '
-        Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button24.Location = New System.Drawing.Point(444, 102)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(140, 42)
-        Me.Button24.TabIndex = 16
-        Me.Button24.Text = "DEX"
-        Me.Button24.UseVisualStyleBackColor = False
+        Me.TextBox1.BackColor = System.Drawing.Color.Gray
+        Me.TextBox1.Location = New System.Drawing.Point(590, 34)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(198, 22)
+        Me.TextBox1.TabIndex = 18
+        Me.TextBox1.Text = "Value Here"
         '
         'Button25
         '
@@ -500,30 +372,179 @@ Partial Class Form1
         Me.Button25.Text = "Speed hack"
         Me.Button25.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'Button24
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.Gray
-        Me.TextBox1.Location = New System.Drawing.Point(590, 34)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(198, 22)
-        Me.TextBox1.TabIndex = 18
-        Me.TextBox1.Text = "Value Here"
+        Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button24.Location = New System.Drawing.Point(444, 102)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(140, 42)
+        Me.Button24.TabIndex = 16
+        Me.Button24.Text = "DEX"
+        Me.Button24.UseVisualStyleBackColor = False
         '
-        'Label3
+        'Button23
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Silver
-        Me.Label3.Location = New System.Drawing.Point(520, 14)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "not injected"
+        Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button23.Location = New System.Drawing.Point(444, 54)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(140, 42)
+        Me.Button23.TabIndex = 15
+        Me.Button23.Text = "RemoveSparkles"
+        Me.Button23.UseVisualStyleBackColor = False
         '
-        'InjTest
+        'Button22
         '
-        Me.InjTest.Enabled = True
-        Me.InjTest.Interval = 10
+        Me.Button22.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button22.Location = New System.Drawing.Point(444, 6)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(140, 42)
+        Me.Button22.TabIndex = 14
+        Me.Button22.Text = "RemoveSmoke"
+        Me.Button22.UseVisualStyleBackColor = False
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button21.Location = New System.Drawing.Point(298, 150)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(140, 42)
+        Me.Button21.TabIndex = 13
+        Me.Button21.Text = "RemoveLimbs"
+        Me.Button21.UseVisualStyleBackColor = False
+        '
+        'Button20
+        '
+        Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button20.Location = New System.Drawing.Point(298, 102)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(140, 42)
+        Me.Button20.TabIndex = 12
+        Me.Button20.Text = "RemoveLegs"
+        Me.Button20.UseVisualStyleBackColor = False
+        '
+        'Button19
+        '
+        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button19.Location = New System.Drawing.Point(298, 54)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(140, 42)
+        Me.Button19.TabIndex = 11
+        Me.Button19.Text = "RemoveForceField"
+        Me.Button19.UseVisualStyleBackColor = False
+        '
+        'Button18
+        '
+        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.Location = New System.Drawing.Point(298, 6)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(140, 42)
+        Me.Button18.TabIndex = 10
+        Me.Button18.Text = "RemoveFire"
+        Me.Button18.UseVisualStyleBackColor = False
+        '
+        'Button17
+        '
+        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Location = New System.Drawing.Point(152, 150)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(140, 42)
+        Me.Button17.TabIndex = 9
+        Me.Button17.Text = "DoBlockHead"
+        Me.Button17.UseVisualStyleBackColor = False
+        '
+        'Button16
+        '
+        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.Location = New System.Drawing.Point(152, 102)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(140, 42)
+        Me.Button16.TabIndex = 8
+        Me.Button16.Text = "AddSparkles"
+        Me.Button16.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Location = New System.Drawing.Point(152, 54)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(140, 42)
+        Me.Button15.TabIndex = 7
+        Me.Button15.Text = "AddSmoke"
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Location = New System.Drawing.Point(152, 6)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(140, 42)
+        Me.Button14.TabIndex = 6
+        Me.Button14.Text = "AddForcefield"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Location = New System.Drawing.Point(6, 150)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(140, 42)
+        Me.Button13.TabIndex = 5
+        Me.Button13.Text = "AddFire"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Location = New System.Drawing.Point(6, 102)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(140, 42)
+        Me.Button12.TabIndex = 4
+        Me.Button12.Text = "RemoveArms"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'usr
+        '
+        Me.usr.BackColor = System.Drawing.Color.Gray
+        Me.usr.Location = New System.Drawing.Point(590, 6)
+        Me.usr.Name = "usr"
+        Me.usr.Size = New System.Drawing.Size(198, 22)
+        Me.usr.TabIndex = 2
+        Me.usr.Text = "usrname here"
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Location = New System.Drawing.Point(6, 54)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(140, 42)
+        Me.Button10.TabIndex = 1
+        Me.Button10.Text = "SetWalkSpeed"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Location = New System.Drawing.Point(6, 6)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(140, 42)
+        Me.Button11.TabIndex = 0
+        Me.Button11.Text = "Btools"
+        Me.Button11.UseVisualStyleBackColor = False
         '
         'TabPage3
         '
@@ -546,6 +567,15 @@ Partial Class Form1
         Me.RichTextBox1.Text = "exploit then the problem probably is that the if you are having trouble launching" &
     " the  exploit is patched just wait for the devs to  release a new update this us" &
     "ually takes  around four hours to a day"
+        '
+        'InjTest
+        '
+        Me.InjTest.Interval = 10
+        '
+        'InjTest2
+        '
+        Me.InjTest2.Enabled = True
+        Me.InjTest2.Interval = 1
         '
         'Form1
         '
@@ -616,4 +646,8 @@ Partial Class Form1
     Friend WithEvents InjTest As Timer
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button26 As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents InjTest2 As Timer
+    Friend WithEvents Timer2 As Timer
 End Class

