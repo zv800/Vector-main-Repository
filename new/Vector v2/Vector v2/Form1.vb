@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports WeAreDevs_API
 Public Class Form1
+
     Dim hax As ExploitAPI = New ExploitAPI
     Dim lastPoint As Point
     Private Sub Label2_Click(sender As Object, e As EventArgs)
@@ -8,7 +9,12 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ''  If My.Settings.api = 0 Then
         hax.SendLuaScript(FastColoredTextBox1.Text)
+        ' Else
+
+        '  End If
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -79,5 +85,99 @@ Public Class Form1
         ListBox1.Items.Clear() 'Clear Items In the LuaScriptList
         Functions.PopulateListBox(ListBox1, "./Scripts", "*.txt") ';
         Functions.PopulateListBox(ListBox1, "./Scripts", "*.lua") ';
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        API.Show()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        hax.DoBTools()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        hax.SetWalkSpeed()
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        hax.RemoveArms(usr.Text)
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        hax.AddFire(usr.Text)
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        hax.AddForcefield(usr.Text)
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        hax.AddSmoke(usr.Text)
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        hax.AddSparkles(usr.Text)
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        hax.DoBlockHead(usr.Text)
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        hax.RemoveFire(usr.Text)
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        hax.RemoveForceField(usr.Text)
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        hax.RemoveLegs(usr.Text)
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        hax.RemoveLimbs(usr.Text)
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        hax.RemoveSmoke()
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        hax.RemoveSparkles()
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Dim fileReader As String
+        Try
+            fileReader = My.Computer.FileSystem.ReadAllText("Scripts\Dex Explorer V2.txt")
+            hax.SendLuaScript(fileReader)
+        Catch ex As Exception
+            MsgBox("ERROR file not found")
+        End Try
+
+        '     MsgBox(fileReader)
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Try
+            hax.SetWalkSpeed(usr.Text, TextBox1.Text)
+        Catch ex As Exception
+            MsgBox("error")
+        End Try
+
+    End Sub
+
+    Private Sub InjTest_Tick(sender As Object, e As EventArgs) Handles InjTest.Tick
+        If hax.isAPIAttached = True Then
+            Label3.Text = "injected"
+        Else
+            Label3.Text = "not injected"
+        End If
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+        'DONT FUCKING ASK
+        RichTextBox1.Text = "exploit then the problem probably is that the if you are having trouble launching the  exploit is patched just wait for the devs to  release a new update this usually takes  around four hours to a day"
     End Sub
 End Class

@@ -22,5 +22,10 @@ Vector v2
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Vector_v2.My.Resources.Resources.Control_Panel_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
