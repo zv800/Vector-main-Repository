@@ -651,7 +651,7 @@ Partial Class ScriptHub
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(1024, 454)
+        Me.ClientSize = New System.Drawing.Size(1025, 454)
         Me.Controls.Add(Me.Button45)
         Me.Controls.Add(Me.Button46)
         Me.Controls.Add(Me.Button47)
