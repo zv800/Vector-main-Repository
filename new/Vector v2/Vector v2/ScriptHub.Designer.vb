@@ -59,6 +59,23 @@ Partial Class ScriptHub
         Me.Button31 = New System.Windows.Forms.Button()
         Me.Button33 = New System.Windows.Forms.Button()
         Me.Button34 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button35 = New System.Windows.Forms.Button()
+        Me.Button36 = New System.Windows.Forms.Button()
+        Me.Button37 = New System.Windows.Forms.Button()
+        Me.Button39 = New System.Windows.Forms.Button()
+        Me.Button40 = New System.Windows.Forms.Button()
+        Me.Button41 = New System.Windows.Forms.Button()
+        Me.Button42 = New System.Windows.Forms.Button()
+        Me.Button43 = New System.Windows.Forms.Button()
+        Me.Button45 = New System.Windows.Forms.Button()
+        Me.Button46 = New System.Windows.Forms.Button()
+        Me.Button47 = New System.Windows.Forms.Button()
+        Me.Button48 = New System.Windows.Forms.Button()
+        Me.Button49 = New System.Windows.Forms.Button()
+        Me.Button50 = New System.Windows.Forms.Button()
+        Me.Button51 = New System.Windows.Forms.Button()
+        Me.Button52 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -444,12 +461,214 @@ Partial Class ScriptHub
         Me.Button34.Text = "hitbox expander"
         Me.Button34.UseVisualStyleBackColor = False
         '
+        'Button27
+        '
+        Me.Button27.BackColor = System.Drawing.Color.Silver
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button27.Location = New System.Drawing.Point(300, 411)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(426, 34)
+        Me.Button27.TabIndex = 65
+        Me.Button27.Text = "chat bypasser GUI"
+        Me.Button27.UseVisualStyleBackColor = False
+        '
+        'Button35
+        '
+        Me.Button35.BackColor = System.Drawing.Color.Silver
+        Me.Button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button35.Location = New System.Drawing.Point(732, 14)
+        Me.Button35.Name = "Button35"
+        Me.Button35.Size = New System.Drawing.Size(138, 51)
+        Me.Button35.TabIndex = 66
+        Me.Button35.Text = "AntiAFK"
+        Me.Button35.UseVisualStyleBackColor = False
+        '
+        'Button36
+        '
+        Me.Button36.BackColor = System.Drawing.Color.Silver
+        Me.Button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button36.Location = New System.Drawing.Point(732, 69)
+        Me.Button36.Name = "Button36"
+        Me.Button36.Size = New System.Drawing.Size(138, 51)
+        Me.Button36.TabIndex = 67
+        Me.Button36.Text = "infinite yield"
+        Me.Button36.UseVisualStyleBackColor = False
+        '
+        'Button37
+        '
+        Me.Button37.BackColor = System.Drawing.Color.Silver
+        Me.Button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button37.Location = New System.Drawing.Point(732, 129)
+        Me.Button37.Name = "Button37"
+        Me.Button37.Size = New System.Drawing.Size(138, 51)
+        Me.Button37.TabIndex = 68
+        Me.Button37.Text = "GOD MODE"
+        Me.Button37.UseVisualStyleBackColor = False
+        '
+        'Button39
+        '
+        Me.Button39.BackColor = System.Drawing.Color.Silver
+        Me.Button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button39.Location = New System.Drawing.Point(732, 186)
+        Me.Button39.Name = "Button39"
+        Me.Button39.Size = New System.Drawing.Size(138, 51)
+        Me.Button39.TabIndex = 69
+        Me.Button39.Text = "Speed Hack GUI"
+        Me.Button39.UseVisualStyleBackColor = False
+        '
+        'Button40
+        '
+        Me.Button40.BackColor = System.Drawing.Color.Silver
+        Me.Button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button40.Location = New System.Drawing.Point(732, 243)
+        Me.Button40.Name = "Button40"
+        Me.Button40.Size = New System.Drawing.Size(138, 51)
+        Me.Button40.TabIndex = 70
+        Me.Button40.Text = "Btools GUI"
+        Me.Button40.UseVisualStyleBackColor = False
+        '
+        'Button41
+        '
+        Me.Button41.BackColor = System.Drawing.Color.Silver
+        Me.Button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button41.Location = New System.Drawing.Point(732, 297)
+        Me.Button41.Name = "Button41"
+        Me.Button41.Size = New System.Drawing.Size(138, 51)
+        Me.Button41.TabIndex = 71
+        Me.Button41.Text = "fling"
+        Me.Button41.UseVisualStyleBackColor = False
+        '
+        'Button42
+        '
+        Me.Button42.BackColor = System.Drawing.Color.Silver
+        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button42.Location = New System.Drawing.Point(732, 354)
+        Me.Button42.Name = "Button42"
+        Me.Button42.Size = New System.Drawing.Size(138, 51)
+        Me.Button42.TabIndex = 72
+        Me.Button42.Text = "BackDoor.exe"
+        Me.Button42.UseVisualStyleBackColor = False
+        '
+        'Button43
+        '
+        Me.Button43.BackColor = System.Drawing.Color.Silver
+        Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button43.Location = New System.Drawing.Point(732, 411)
+        Me.Button43.Name = "Button43"
+        Me.Button43.Size = New System.Drawing.Size(138, 34)
+        Me.Button43.TabIndex = 73
+        Me.Button43.Text = "Spam GUI"
+        Me.Button43.UseVisualStyleBackColor = False
+        '
+        'Button45
+        '
+        Me.Button45.BackColor = System.Drawing.Color.Silver
+        Me.Button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button45.Location = New System.Drawing.Point(876, 411)
+        Me.Button45.Name = "Button45"
+        Me.Button45.Size = New System.Drawing.Size(138, 34)
+        Me.Button45.TabIndex = 81
+        Me.Button45.UseVisualStyleBackColor = False
+        '
+        'Button46
+        '
+        Me.Button46.BackColor = System.Drawing.Color.Silver
+        Me.Button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button46.Location = New System.Drawing.Point(876, 354)
+        Me.Button46.Name = "Button46"
+        Me.Button46.Size = New System.Drawing.Size(138, 51)
+        Me.Button46.TabIndex = 80
+        Me.Button46.UseVisualStyleBackColor = False
+        '
+        'Button47
+        '
+        Me.Button47.BackColor = System.Drawing.Color.Silver
+        Me.Button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button47.Location = New System.Drawing.Point(876, 297)
+        Me.Button47.Name = "Button47"
+        Me.Button47.Size = New System.Drawing.Size(138, 51)
+        Me.Button47.TabIndex = 79
+        Me.Button47.Text = "ZO ANTI CHEAT BYPASS"
+        Me.Button47.UseVisualStyleBackColor = False
+        '
+        'Button48
+        '
+        Me.Button48.BackColor = System.Drawing.Color.Silver
+        Me.Button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button48.Location = New System.Drawing.Point(876, 243)
+        Me.Button48.Name = "Button48"
+        Me.Button48.Size = New System.Drawing.Size(138, 51)
+        Me.Button48.TabIndex = 78
+        Me.Button48.Text = "Anti cheat bypass script"
+        Me.Button48.UseVisualStyleBackColor = False
+        '
+        'Button49
+        '
+        Me.Button49.BackColor = System.Drawing.Color.Silver
+        Me.Button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button49.Location = New System.Drawing.Point(876, 194)
+        Me.Button49.Name = "Button49"
+        Me.Button49.Size = New System.Drawing.Size(138, 43)
+        Me.Button49.TabIndex = 77
+        Me.Button49.Text = "DEX GUI"
+        Me.Button49.UseVisualStyleBackColor = False
+        '
+        'Button50
+        '
+        Me.Button50.BackColor = System.Drawing.Color.Silver
+        Me.Button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button50.Location = New System.Drawing.Point(876, 129)
+        Me.Button50.Name = "Button50"
+        Me.Button50.Size = New System.Drawing.Size(138, 59)
+        Me.Button50.TabIndex = 76
+        Me.Button50.Text = "OP GUI HUB LUMBER TYCOON 2"
+        Me.Button50.UseVisualStyleBackColor = False
+        '
+        'Button51
+        '
+        Me.Button51.BackColor = System.Drawing.Color.Silver
+        Me.Button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button51.Location = New System.Drawing.Point(876, 69)
+        Me.Button51.Name = "Button51"
+        Me.Button51.Size = New System.Drawing.Size(138, 51)
+        Me.Button51.TabIndex = 75
+        Me.Button51.Text = "Roblox Teleport to Player GUI"
+        Me.Button51.UseVisualStyleBackColor = False
+        '
+        'Button52
+        '
+        Me.Button52.BackColor = System.Drawing.Color.Silver
+        Me.Button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button52.Location = New System.Drawing.Point(876, 14)
+        Me.Button52.Name = "Button52"
+        Me.Button52.Size = New System.Drawing.Size(138, 51)
+        Me.Button52.TabIndex = 74
+        Me.Button52.Text = "Advanced Prison Life GUI"
+        Me.Button52.UseVisualStyleBackColor = False
+        '
         'ScriptHub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(845, 457)
+        Me.ClientSize = New System.Drawing.Size(1024, 454)
+        Me.Controls.Add(Me.Button45)
+        Me.Controls.Add(Me.Button46)
+        Me.Controls.Add(Me.Button47)
+        Me.Controls.Add(Me.Button48)
+        Me.Controls.Add(Me.Button49)
+        Me.Controls.Add(Me.Button50)
+        Me.Controls.Add(Me.Button51)
+        Me.Controls.Add(Me.Button52)
+        Me.Controls.Add(Me.Button43)
+        Me.Controls.Add(Me.Button42)
+        Me.Controls.Add(Me.Button41)
+        Me.Controls.Add(Me.Button40)
+        Me.Controls.Add(Me.Button39)
+        Me.Controls.Add(Me.Button37)
+        Me.Controls.Add(Me.Button36)
+        Me.Controls.Add(Me.Button35)
+        Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button34)
         Me.Controls.Add(Me.Button33)
         Me.Controls.Add(Me.Button31)
@@ -486,7 +705,7 @@ Partial Class ScriptHub
         Me.Controls.Add(Me.Button44)
         Me.Controls.Add(Me.Button38)
         Me.Controls.Add(Me.Button1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ScriptHub"
         Me.Text = "ScriptHub (things may or may not work)"
@@ -530,4 +749,21 @@ Partial Class ScriptHub
     Friend WithEvents Button31 As Button
     Friend WithEvents Button33 As Button
     Friend WithEvents Button34 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button35 As Button
+    Friend WithEvents Button36 As Button
+    Friend WithEvents Button37 As Button
+    Friend WithEvents Button39 As Button
+    Friend WithEvents Button40 As Button
+    Friend WithEvents Button41 As Button
+    Friend WithEvents Button42 As Button
+    Friend WithEvents Button43 As Button
+    Friend WithEvents Button45 As Button
+    Friend WithEvents Button46 As Button
+    Friend WithEvents Button47 As Button
+    Friend WithEvents Button48 As Button
+    Friend WithEvents Button49 As Button
+    Friend WithEvents Button50 As Button
+    Friend WithEvents Button51 As Button
+    Friend WithEvents Button52 As Button
 End Class

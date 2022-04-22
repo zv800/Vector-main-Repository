@@ -83,6 +83,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        HaveInternetConnection()
         ListBox1.Items.Clear() 'Clear Items In the LuaScriptList
         If My.Settings.serverside = True Then
             CheckBox1.Checked = True
@@ -224,4 +225,19 @@ Public Class Form1
             My.Settings.serverside = False
         End If
     End Sub
+
+    Public Function HaveInternetConnection() As Boolean
+
+        Try
+            Return My.Computer.Network.Ping("www.google.com")
+        Catch
+            MsgBox("ERROR:failed to load please connect to the internet", 0 + 16, "ERROR")
+            '  MsgBox("what the hell are you doing with no internet", 0 + 16, "bruh")
+            ' MsgBox("what the hell are you doing with no internet")
+            Me.Close()
+            Return False
+        End Try
+
+    End Function
+
 End Class
