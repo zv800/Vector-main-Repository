@@ -578,6 +578,7 @@ Partial Class ScriptHub
         Me.Button46.Name = "Button46"
         Me.Button46.Size = New System.Drawing.Size(138, 51)
         Me.Button46.TabIndex = 80
+        Me.Button46.Text = "Sword"
         Me.Button46.UseVisualStyleBackColor = False
         '
         'Button47

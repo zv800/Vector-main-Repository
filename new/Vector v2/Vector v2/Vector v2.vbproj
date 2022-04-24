@@ -90,6 +90,12 @@
     <Compile Include="API.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="donatefrm.Designer.vb">
+      <DependentUpon>donatefrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="donatefrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
   <ItemGroup>
     <EmbeddedResource Include="API.resx">
       <DependentUpon>API.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donatefrm.resx">
+      <DependentUpon>donatefrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

@@ -348,4 +348,10 @@ Public Class ScriptHub
         hax.SendLuaScript(Script)
 
     End Sub
+
+    Private Sub Button46_Click(sender As Object, e As EventArgs) Handles Button46.Click
+        Dim wb As WebClient = New WebClient()
+        Dim Script As String = wb.DownloadString("https://pastebin.com/raw/mhxekj7V")
+        hax.SendLuaScript(Script)
+    End Sub
 End Class

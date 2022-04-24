@@ -240,4 +240,7 @@ Public Class Form1
 
     End Function
 
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        Process.Start("https://www.paypal.com/donate/?hosted_button_id=XSXT7ASFC8L7C") 'AHJBFDWSCKBLVHSDGVBJHCkjghbz
+    End Sub
 End Class

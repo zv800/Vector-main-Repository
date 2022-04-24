@@ -44,6 +44,7 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -70,7 +71,7 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.InjTest2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button27 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.FastColoredTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -234,6 +235,7 @@ Partial Class Form1
         Me.FastColoredTextBox1.CharWidth = 10
         Me.FastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.FastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.FastColoredTextBox1.Font = New System.Drawing.Font("Courier New", 9.75!)
         Me.FastColoredTextBox1.ForeColor = System.Drawing.Color.White
         Me.FastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.FastColoredTextBox1.IsReplaceMode = False
@@ -313,6 +315,17 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(794, 272)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Executor"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox1.Location = New System.Drawing.Point(595, 203)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(181, 20)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "open server-side executor"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Button26
         '
@@ -551,6 +564,7 @@ Partial Class Form1
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TabPage3.Controls.Add(Me.Button27)
         Me.TabPage3.Controls.Add(Me.RichTextBox1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
@@ -579,16 +593,16 @@ Partial Class Form1
         Me.InjTest2.Enabled = True
         Me.InjTest2.Interval = 1
         '
-        'CheckBox1
+        'Button27
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(595, 203)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(181, 20)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "open server-side executor"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button27.Location = New System.Drawing.Point(675, 236)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(106, 31)
+        Me.Button27.TabIndex = 10
+        Me.Button27.Text = "Donate"
+        Me.Button27.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -665,4 +679,5 @@ Partial Class Form1
     Friend WithEvents InjTest2 As Timer
     Friend WithEvents Timer2 As Timer
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button27 As Button
 End Class
